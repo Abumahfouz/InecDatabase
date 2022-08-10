@@ -12,8 +12,8 @@
 
                 var votersName = new List<string>
                 {
-                    "Mahfooz Abubakar", "Will Smith", "Michael Lubarton","Mahfooz Abubakar",
-                     "Abayomi Oyaifo","Kolawole Smith", "Bola Hungbe", "Mahfooz Abubakar", "Abayomi Oyaifo", "Abayomi Oyaifo"
+                    "mahfooz abubakar", "will smith", "michael lubarton","mahfooz abubakar",
+                     "abayomi oyaifo","kolawole smith", "bola hungbe", "mahfooz abubakar", "abayomi oyaifo", "abayomi oyaifo"
 
                 };
 
@@ -44,6 +44,7 @@
 
                     Console.WriteLine("Enter Candidate Information");
                     string? newRegistration = Console.ReadLine();
+                        newRegistration.ToLower(); //Convert new entries to lowercase for correctness
                     if (myDictionary.ContainsKey(newRegistration)) // Check if registration alerady exists
                     {
                         Console.WriteLine("Warning! Multiple Entry.");
